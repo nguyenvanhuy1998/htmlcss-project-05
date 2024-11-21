@@ -76,6 +76,14 @@ a {
     background: #696D77;
 }
 
+.section-heading {
+    margin-top: 12px;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--primary-color);
+}
+
 .section-desc {
     margin-top: 20px;
     font-size: 1.8rem;
@@ -380,4 +388,26 @@ a {
     font-size: 1.2rem;
     line-height: 1.16;
     color: #696D76
+}
+
+.works__list {
+    margin-top: 70px;
+}
+.works-item + .works-item {
+    margin-top: 30px;
+}
+
+.works-item__title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+    color: var(--primary-color);
+
+}
+
+.works-item__desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #696D76;
 }
