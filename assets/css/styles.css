@@ -309,3 +309,75 @@ a {
     color: #FFFFFF;
 
 }
+
+/* Works */
+.works {
+    margin-top: 160px;
+}
+
+.works__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.works__media {
+    position: relative;
+    padding-right: 100px;
+}
+
+.works__img-wrap {
+    position: relative;
+    width: 470px;
+}
+
+.works__img-wrap::after {
+    content: url(../images/works-decor-01.svg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.works__img {
+    width: 456px;
+    display: block;
+    margin: 0 auto;
+}
+
+.works__decor {
+    position: absolute;
+    top: 76px;
+    right: 162px;
+}
+
+.works-active {
+    position: absolute;
+    right: 0;
+    bottom: 96px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    column-gap: 10px;
+    padding: 15px;
+    background: #FFFDFA;
+    box-shadow: 0px 14px 34px 0px #00000012;
+
+}
+
+.works-active__title {
+    font-family: Inter, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.21;
+    color: var(--primary-color);
+}
+
+.works-active__desc {
+    margin-top: 5px;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.16;
+    color: #696D76
+}
