@@ -287,7 +287,7 @@
             <section class="payments">
                 <div class="container">
                     <div class="payments__inner">
-                        <section class="payments__content">
+                        <div class="payments__content">
                             <p class="section-subtitle">Digital Smart Wallet</p>
                             <h2 class="section-heading">
                                 One Card For All Your Payments
@@ -311,59 +311,57 @@
                             <a href="#!" class="btn payments__action-btn">
                                 Get Started
                             </a>
-                        </section>
+                        </div>
                         <div class="payments__media">
                             <img
                                 src="./assets/images/payments-card.png"
                                 alt=""
-                                class="payments__card"
+                                class="payments__img"
                             />
-                            <!-- Payments sends -->
-                            <div class="payments-send">
-                                <div class="payments__icon-wrap">
+
+                            <div class="payments__card">
+                                <div class="payments__card-icon">
                                     <img
                                         src="./assets/icons/paper-plane.svg"
                                         alt=""
                                     />
                                 </div>
-                                <div class="payments-send__info">
-                                    <p class="payments-send__title">
-                                        Send Money
-                                    </p>
-                                    <p class="payments-send__desc">
-                                        Airbnb Payment
-                                    </p>
-                                </div>
-                                <div class="payments-send__value">
-                                    <span class="payments-send__price">
-                                        - $600
-                                    </span>
-                                    <time
-                                        datetime=""
-                                        class="payments-send__time"
-                                    >
-                                        Sep 23
-                                    </time>
+                                <div class="payments__card-info">
+                                    <div class="payments__card-row">
+                                        <p class="payments__card-title">
+                                            Send Money
+                                        </p>
+                                        <span class="payments__card-price"
+                                            >- $600</span
+                                        >
+                                    </div>
+                                    <div class="payments__card-row">
+                                        <p class="payments__card-desc">
+                                            Airbnb Payment
+                                        </p>
+                                        <time class="payments__card-time">
+                                            Sep 23
+                                        </time>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Payments -->
-                            <div class="payments-income">
-                                <div
-                                    class="payments__icon-wrap payments-income__icon-wrap"
-                                >
+                            <div class="payments__card-bottom">
+                                <div class="payments__card-bottom-icon">
                                     <img
                                         src="./assets/icons/income.svg"
                                         alt=""
                                     />
                                 </div>
-                                <p class="payments-income__title">Income</p>
-                                <span class="payments-income__price">
+                                <p class="payments__card-bottom-title">
+                                    Income
+                                </p>
+                                <span class="payments__card-bottom-price">
                                     $1250
                                 </span>
                             </div>
                         </div>
-                        <div class="payments__media">Column 3</div>
-                        <section class="payments__content">Column 4</section>
+                        <div class="payments__media">Colum 3</div>
+                        <div class="payments__content">Column 4</div>
                     </div>
                 </div>
             </section>

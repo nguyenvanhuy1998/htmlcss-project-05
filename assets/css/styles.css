@@ -422,7 +422,7 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    column-gap: 130px;
+    gap: 160px 130px;
 }
 
 .payments__desc {
@@ -463,18 +463,20 @@ a {
 .payments__media {
     position: relative;
     padding: 48px 88px 55px 0;
+
 }
 
-.payments__card {
+.payments__img {
     width: 482px;
 }
 
-.payments-send {
+.payments__card {
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
     display: flex;
     align-items: center;
+    column-gap: 14px;
     padding: 23px 13px;
     width: 276px;
     border-radius: 12px;
@@ -483,7 +485,8 @@ a {
 
 }
 
-.payments__icon-wrap {
+.payments__card-icon,
+.payments__card-bottom-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -491,83 +494,74 @@ a {
     height: 40px;
     border-radius: 8px;
     background: #da64641a;
-    box-shadow: -4px -2px 16px 0px #FFFFFF;
+}
+
+.payments__card-info {
+    flex: 1;
 
 }
 
-.payments-send__info {
-    margin-left: 14px;
-}
-
-.payments-send__title {
+.payments__card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-family: Inter, sans-serif;
+
+}
+
+.payments__card-row+.payments__card-row {
+    margin-top: 4px;
+}
+
+.payments__card-title {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.16;
     color: var(--primary-color);
 }
 
-.payments-send__desc,
-.payments-send__time {
-    margin-top: 4px;
-    font-family: Inter, sans-serif;
+.payments__card-price {
+    font-size: 1.6rem;
+    line-height: 1.18;
+    color: #212832;
+}
+
+.payments__card-desc,
+.payments__card-time {
     font-size: 1rem;
     line-height: 1.2;
     color: #696D76;
 
 }
 
-.payments-send__value {
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.payments-send__price {
-    font-family: Inter, sans-serif;
-    font-size: 1.6rem;
-    text-align: right;
-    line-height: 1.18;
-    color: var(--primary-color);
-
-}
-
-.payments-send__time {
-    text-align: right;
-}
-
-.payments-income {
+.payments__card-bottom {
     position: absolute;
     right: 0;
     bottom: 0;
     padding: 15px;
     width: 120px;
-    height: 120px;
-    background: #439F90;
     border-radius: 16px;
+    background-color: #439F90;
 }
 
-.payments-income__icon-wrap {
+.payments__card-bottom-icon {
     width: 30px;
     height: 30px;
     background: #FFFFFF;
-    box-shadow: none;
 }
 
-.payments-income__title {
-    margin-top: 14px;
+.payments__card-bottom-title {
     font-size: 1.2rem;
+    margin-top: 14px;
     line-height: 1.33;
-    color: #FFFFFF;
-
+    color: #FFFFFF
 }
 
-.payments-income__price {
-    margin-top: 6px;
+.payments__card-bottom-price {
     display: inline-block;
+    margin-top: 6px;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.33;
     color: #FFFFFF;
-
 }
