@@ -565,3 +565,89 @@ a {
     line-height: 1.33;
     color: #FFFFFF;
 }
+
+.payments__media-bottom {
+    position: relative;
+    padding: 0 100px 0 0;
+}
+
+.payments__img-wrap {
+    position: relative;
+    width: 470px;
+
+}
+
+.payments__img-wrap::after {
+    content: url(../images/payments-wrap-01.svg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+
+.payments__img-bottom {
+    display: block;
+    width: 413px;
+    margin: 0 auto;
+}
+
+.payments__method {
+    position: absolute;
+    bottom: 57px;
+    right: 0;
+    padding: 35px 26px 0 0;
+}
+
+.payments__method-card {
+    padding: 28px;
+    background: #FFFFFF;
+    box-shadow: 0px 44px 48px 0px #0000001A;
+    border-radius: 10px;
+}
+
+.payments__method-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    color: var(--primary-color);
+
+}
+
+.payments__method-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.payments__method-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 48px;
+    background: #F2F2FA;
+    border-radius: 4px;
+}
+
+.payments__method-item:nth-child(6) {
+    background: #F9EA63;
+}
+
+.payments__method-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #7264D6;
+    box-shadow: 0px 15px 40px 0px #0000001A;
+
+}
