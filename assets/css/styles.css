@@ -419,15 +419,12 @@ a {
 }
 
 .payments__inner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     align-items: center;
-    gap: 160px 130px;
+    column-gap: 130px;
+    justify-content: space-between;
 }
 
-.payments__desc {
-    width: 470px;
-}
 
 .payments__list {
     margin-top: 28px;
@@ -564,6 +561,12 @@ a {
     font-weight: 600;
     line-height: 1.33;
     color: #FFFFFF;
+}
+
+
+
+.payments__bottom {
+    margin-top: 160px;
 }
 
 .payments__media-bottom {
