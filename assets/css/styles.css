@@ -673,9 +673,141 @@ a {
 }
 
 .clients__desc {
-
     width: 435px;
     margin-left: auto;
     margin-right: auto;
 
+}
+
+.clients__list {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    overflow: hidden;
+}
+
+.clients-item {
+    flex: 1;
+    text-align: center;
+}
+
+.clients-item__feedback {
+    position: relative;
+    padding: 42px 28px;
+    width: 570px;
+    border: 1px solid #DFE2E8;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+
+.clients-item__feedback::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -62px;
+    width: 70px;
+    height: 70px;
+    background: inherit;
+    rotate: 45deg;
+    border: 1px solid #DFE2E8;
+    border-top: none;
+    border-left: none;
+
+}
+
+.clients-item__feedback:hover {
+    filter: drop-shadow(0 22px 54px #00000012);
+}
+
+
+
+.clients-item__desc {
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1.54;
+    color: #696D76;
+
+}
+
+.clients-item__info {
+
+    margin-top: 80px;
+}
+
+.clients-item__img-wrap {
+
+    position: relative;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients-item__img-wrap::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: #4AB5E3;
+}
+
+.clients-item:nth-child(2) .clients-item__img-wrap::after {
+    background: #439F90;
+}
+
+
+
+.clients-item__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.clients-item__name {
+    margin-top: 20px;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+    color: #070052;
+}
+
+.clients-item__title {
+    margin-top: 2px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #696D76;
+}
+
+.clients__dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.clients__dot {
+    width: 22px;
+    height: 6px;
+    border-radius: 1px;
+    border: 1px solid #9B9FAB
+}
+
+
+.clients__dot--active,
+.clients__dot:hover {
+    cursor: pointer;
+    background: #7264D6;
+    border: none;
 }
