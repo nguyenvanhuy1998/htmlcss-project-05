@@ -900,3 +900,79 @@ a {
     color: #696D76;
 
 }
+
+/* Download */
+.download {
+    margin-top: 160px;
+}
+
+.download__inner {
+    position: relative;
+    padding: 100px 0;
+    background: #7264D6;
+    border-radius: 24px;
+}
+
+.download__info {
+    text-align: center;
+}
+
+.download__subtitle {
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.download__subtitle::before {
+    background: #FFFFFF;
+}
+
+.download__heading {
+    color: #FFFFFF;
+}
+
+.download__desc {
+    margin-top: 18px;
+    color: #FFFFFF;
+    width: 435px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download__action {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.download__action-btn {
+    --height: 64px;
+    background: #FFFFFF;
+    min-width: 182px;
+    border: none;
+    outline: none;
+}
+
+.download__decor {
+    position: absolute;
+}
+
+.download__decor:nth-of-type(1) {
+    top: 49px;
+    left: 112px;
+}
+
+.download__decor:nth-of-type(2) {
+    top: 49px;
+    right: 112px;
+}
+
+.download__decor:nth-of-type(3) {
+    bottom: 49px;
+    left: 166px;
+}
+
+.download__decor:nth-of-type(4) {
+    bottom: 49px;
+    right: 166px;
+}
