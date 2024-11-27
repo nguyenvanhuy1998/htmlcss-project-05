@@ -855,6 +855,8 @@ a {
     display: flex;
     align-items: center;
     column-gap: 22px;
+    transition: .25s;
+
 }
 
 .blog-item:hover {
@@ -862,6 +864,7 @@ a {
     border: none;
     cursor: pointer;
 }
+
 .blog-item:hover .blog-item__link {
     color: #7264D6;
 }
