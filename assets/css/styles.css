@@ -811,3 +811,31 @@ a {
     background: #7264D6;
     border: none;
 }
+
+.blog {
+    margin-top: 160px;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    width: 425px;
+}
+
+.blog__heading {
+    margin-top: 6px;
+}
+
+.blog__desc {
+    margin-top: 18px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.blog__action-btn {
+    min-width: 123px;
+}
