@@ -92,6 +92,16 @@
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
         />
+        <!-- Animation -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- AOS Animated -->
+        <!-- <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        /> -->
     </head>
     <body>
         <!-- Header -->
@@ -141,7 +151,9 @@
                     <!-- Hero content -->
                     <section class="hero__content">
                         <p class="section-subtitle">Digital Smart Wallet</p>
-                        <h1 class="hero__heading">
+                        <h1
+                            class="hero__heading wow animate__animated animate__bounce"
+                        >
                             Digital <strong>Payment</strong> For Everyone.
                         </h1>
                         <p class="section-desc hero__desc">
@@ -171,7 +183,9 @@
                     <!-- Hero media -->
                     <section class="hero__media">
                         <!-- Deposit -->
-                        <div class="hero-deposit">
+                        <div
+                            class="hero-deposit wow animate__animated animate__fadeInLeft"
+                        >
                             <div class="hero__row">
                                 <img src="./assets/icons/download.svg" alt="" />
                                 <span class="hero-deposit__title">
@@ -189,11 +203,15 @@
                             />
                         </figure>
                         <!-- Interest -->
-                        <div class="hero-interest">
+                        <div
+                            class="hero-interest wow animate__animated animate__fadeInRight"
+                        >
                             <span class="hero-interest__value">0%</span>
                             <p class="hero-interest__desc">Interest</p>
                         </div>
-                        <div class="hero-secured">
+                        <div
+                            class="hero-secured wow animate__animated animate__fadeInRight"
+                        >
                             <img src="./assets/icons/shield.svg" alt="" />
                             <div class="hero-secured__info">
                                 <span class="hero-secured__price">$1.310</span>
@@ -221,9 +239,11 @@
                             <img
                                 src="./assets/icons/card.svg"
                                 alt=""
-                                class="works__decor"
+                                class="works__decor wow animate__animated animate__fadeInRight"
                             />
-                            <div class="works-active">
+                            <div
+                                class="works-active wow animate__animated animate__fadeInRight"
+                            >
                                 <img
                                     src="./assets/icons/check.svg"
                                     alt=""
@@ -319,7 +339,9 @@
                                 class="payments__img"
                             />
 
-                            <div class="payments__card">
+                            <div
+                                class="payments__card wow animate__animated animate__fadeInRight"
+                            >
                                 <div class="payments__card-icon">
                                     <img
                                         src="./assets/icons/paper-plane.svg"
@@ -345,7 +367,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="payments__card-bottom">
+                            <div
+                                class="payments__card-bottom wow animate__animated animate__fadeInRight"
+                            >
                                 <div class="payments__card-bottom-icon">
                                     <img
                                         src="./assets/icons/income.svg"
@@ -370,7 +394,9 @@
                                     class="payments__img-bottom"
                                 />
                             </figure>
-                            <div class="payments__method">
+                            <div
+                                class="payments__method wow animate__animated animate__fadeInUp"
+                            >
                                 <div class="payments__method-card">
                                     <p class="payments__method-title">
                                         Choose payment method:
@@ -893,5 +919,14 @@
                 </p>
             </div>
         </footer>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
