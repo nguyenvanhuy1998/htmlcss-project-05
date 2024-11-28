@@ -94,10 +94,17 @@ a {
 
 /* Header */
 .header {
-    padding: 42px 0;
+    background: #FFFFFF;
+}
+
+.header--fixed {
+    position: sticky;
+    top: -34px;
+    z-index: 1;
 }
 
 .header__inner {
+    padding: 42px 0 8px;
     display: flex;
     align-items: center;
 
